@@ -12,7 +12,7 @@
 // document.querySelector('.guess').value;
 // define the event on the page
 
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 100) + 1;
 let score = 20;
 let highscore = 0;
 
@@ -56,7 +56,7 @@ document.querySelector(".check").addEventListener("click", function () {
 // create an anonimus function
 // set the restart values
 document.querySelector(".again").addEventListener("click", function () {
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  secretNumber = Math.trunc(Math.random() * 100) + 1;
   score = 20;
   displayMessage("Start guessing...");
   document.querySelector(".score").textContent = score;
